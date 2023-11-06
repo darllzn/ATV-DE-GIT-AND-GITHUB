@@ -1,0 +1,14 @@
+#Exercicio 035 Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
+
+def bi(ano):
+    if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+        return True
+    else:
+        return False
+
+ano = int(input("Digite um ano: "))
+
+if bi(ano):
+    print(f"O ano {ano} é bissexto.")
+else:
+    print(f"O ano {ano} não é bissexto.")
